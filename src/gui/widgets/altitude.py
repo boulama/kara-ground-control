@@ -47,5 +47,5 @@ class AltitudeWidget(QtWidgets.QFrame):
         self.altitude_data[-1] = data['altitude']
         self.alt_line[0].set_data(self.time_data, self.altitude_data)
         self.alt.set_xlim(self.time_data[0], self.time_data[-1])
-        self.alt.set_ylim(-50, 1000)
+        self.alt.set_ylim(-10, 20)
         self.canvas.draw()

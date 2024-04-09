@@ -91,7 +91,7 @@ class RocketPositionSTLUI(QtWidgets.QWidget):
         self.setWindowTitle("Rocket Position STL")
         self.setGeometry(100, 100, 800, 600)
 
-    def get_telemetry(self, serial_port: str = '/dev/cu.usbserial-19',
+    def get_telemetry(self, serial_port: str = '/dev/cu.usbserial-0001',
                       baud_rate: int = 57600
                       ):
         # Use threading for telemetry
@@ -130,6 +130,7 @@ class TelemetryThread(threading.Thread):
                     self.ui.accelerometer_widget.update_acc_plot(data)
                     self.ui.temperature_widget.update_temperature_plot(data)
                     self.ui.altitude_widget.update_altitude_plot(data)
+                    self.ui.stl_viewer.update_rocket_position(data)
                 except Exception as e:
                     logger.exception(e)
         except KeyboardInterrupt:
