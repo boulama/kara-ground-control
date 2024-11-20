@@ -91,7 +91,7 @@ class RocketPositionSTLUI(QtWidgets.QWidget):
         self.setWindowTitle("Rocket Position STL")
         self.setGeometry(100, 100, 800, 600)
 
-    def get_telemetry(self, serial_port: str = '/dev/cu.usbserial-0001',
+    def get_telemetry(self, serial_port: str = '/dev/tty.usbserial-0001',
                       baud_rate: int = 57600
                       ):
         # Use threading for telemetry

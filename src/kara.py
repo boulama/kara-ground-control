@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 
-def get_telemetry(serial_port: str = '/dev/cu.usbserial-5',
+def get_telemetry(serial_port: str = '/dev/tty.usbserial-0001',
                   baud_rate: int = 57600,
                   socket_server: str = 'http://127.0.0.1:6969'
                   ):
