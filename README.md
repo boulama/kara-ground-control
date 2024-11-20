@@ -24,6 +24,8 @@ I use it when most times when I test and fly model rockets.
 - **Configurable Serial Communication:** Allows real-time telemetry data acquisition.
 - **Notebook Calculations:** Includes a Jupyter notebook for STL visualization and rotation simulations.
 
+![demo_gif.gif](assets/demo_gif.gif)
+
 ---
 
 ## Notebook for Calculations
